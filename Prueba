@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro - Premios ESG</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Registro para los Premios ESG</h1>
+    <form id="registrationForm">
+        <label for="firstName">Nombres:</label>
+        <input type="text" id="firstName" name="firstName" required><br><br>
+        
+        <label for="lastName">Apellidos:</label>
+        <input type="text" id="lastName" name="lastName" required><br><br>
+        
+        <label for="companyName">Nombre de la empresa:</label>
+        <input type="text" id="companyName" name="companyName" required><br><br>
+        
+        <label for="companyRUC">RUC de la empresa:</label>
+        <input type="text" id="companyRUC" name="companyRUC" required><br><br>
+        
+        <label for="projectName">Nombre del proyecto:</label>
+        <input type="text" id="projectName" name="projectName" required><br><br>
+        
+        <!-- Stripe Element -->
+        <label for="card-element">Información de la tarjeta</label>
+        <div id="card-element">
+            <!-- Stripe Element will be inserted here. -->
+        </div>
+        
+        <!-- Error message for card processing -->
+        <div id="card-errors" role="alert"></div><br>
+        
+        <button type="submit">Registrarse y Pagar</button>
+    </form>
+
+    <script src="https://js.stripe.com/v3/"></script>
+    <script src="script.js"></script>
+</body>
+</html>
